@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Sign Page</title>
+		<style type="text/css">
+			/* body css for whole page */
+    			body
+   			{
+	    			margin:0px;
+	    			background-color:#1AAC8B;
+	    			background-image:url(image/background.jpg);
+	    			color:#f9fcf5;
+	    			font-family:Arial, Helvetica, sans-serif;
+    			}
+    
+   			 #main{
+				width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
+    				border-radius:5px; padding-left:10px; margin-top:100px; border-top:3px double #f1f1f1; 
+    				border-bottom:3px double #f1f1f1; padding-top:20px;
+    			}
+    
+    			/* css code for textbox */
+    			#main .tb {
+				height:28px; width:230px; border:2px solid #f26724; color:#fd7838; font-size:15%;font-weight:bold; border-left:10px solid #f7f7f7; opacity:0.9;
+			}
+		</style>
+	</head>
+	<body>
+		<br/>
+		<br/>
+
+		<div id="main">
+		<div class="h-tag">
+			<font size="5">
+			<h2 align="center">SignUp - Enter Account Details </h2></font>
+		</div>
+		
+		<font size="5">
+		<form action="/signup" method="Post" align="center" cellpadding="8" border="0" >
+		<label for="Username"> Enter Username : </label>
+		<input type="text" style="font-size: 12pt" name="Username" placeholder="Enter Username"/>
+		<br /><br/>
+		<label for="Password"> Enter Password : </label>
+		<input type="text" style="font-size: 12pt" name="Password" placeholder="Enter Password"/>
+		<br />
+		<br/>
+		<br/>
+
+		<input type="submit" style="font-size: 12pt" />
+		</font>
+	</form>
+
+	<h1> {{info}} </h1>
+	</body>
+</html>

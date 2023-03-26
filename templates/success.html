@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>Success Page</title>
+			<style type="text/css">
+			/* body css for whole page */
+    			body
+   			{
+	    			margin:0px;
+	    			background-color:#C17CD9;
+	    			background-image:url(image/background.jpg);
+	    			color:#f9fcf5;
+	    			font-family:Arial, Helvetica, sans-serif;
+				font-size:17px;
+    			}
+    
+   			 #main{
+				width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
+    				border-radius:5px; padding-left:10px; margin-top:50px; border-top:3px double #f1f1f1; 
+    				border-bottom:3px double #f1f1f1; padding-top:10px;
+    			}
+    
+    			/* css code for textbox */
+    			#main .tb {
+				height:28px; width:230px; border:1px solid #f26724; color:#fd7838; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;
+			}
+			tbody td {
+				font-size: 115%;
+			}
+		</style>
+	</head>
+	<body class="starting">
+		<br/>
+			<h2 align="center"> Success Page - Predicted Charge </h2>
+		<br/>
+		<div id="main">
+		<div class="h-tag">
+			<h2 align="center"> Following were the inputs given :  </h2>
+		</div>
+				
+		<table cellspacing="2" align="center" cellpadding="8" border="0">
+
+				<tr>
+					 <td><h4> Age of the patient  </h4></td>
+					<td><h4> {{input1}} </h4></td>
+				</tr>
+
+				<tr>
+					 <td><h4> Gender of the patient   </h4></td>
+					<td><h4> {{input2}} </h4></td>
+				</tr>
+
+				<tr>
+					 <td><h4> BMI of the patient  </h4></td>
+					<td><h4> {{input3}} </h4></td>
+				</tr>
+
+				<tr>
+					 <td><h4> No.of children the patient has  </h4></td>
+					<td><h4> {{input4}} </h4></td>
+				</tr>
+
+				<tr>
+					 <td><h4> Is the patient a smoker </h4></td>
+					<td><h4> {{input5}} </h4></td>
+				</tr>
+
+				<tr>
+					 <td><h4> Which region the patient belongs to  </h4></td>
+					<td><h4> {{input6}} </h4></td>
+				</tr>
+		
+		</table>
+
+		<div id="main">
+		<div class="h-tag">
+			<h2 align="center">Prediction Result </h2>
+		</div>
+		<h4 style="font-size: 16pt" align="center"> Charge patient has to pay : {{result}} </h4>
+
+		<br/>
+		<br/>
+		<form  action="/logout" align="center" >
+		<input type="submit" value="Exit" style="font-size: 12pt"/>
+		</form>
+	</body>
+</html>
